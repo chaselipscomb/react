@@ -1,25 +1,28 @@
 import React from "react";
-import Navbar from 'react-bootstrap/Navbar';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 
-const widths = {
-    width: '19%'
-  };
+
   const borders = {
-    border: '1px solid grey'
+    height: '80px',
+    padding: '25px'
   };
+  const text = {
+      textAlign: 'center'
+  }
 
 function dataheader() {
     return (
         <React.Fragment>
-            <Container>
-                <Navbar expand="lg" variant="light" bg="light" style = {borders}>
-                    <Navbar.Brand style={widths}>Image</Navbar.Brand>
-                    <Navbar.Brand style={widths}>Name</Navbar.Brand>
-                    <Navbar.Brand style={widths}>Phone</Navbar.Brand>
-                    <Navbar.Brand style={widths}>Email</Navbar.Brand>
-                    <Navbar.Brand style={widths}>DOB</Navbar.Brand>
-                </Navbar>
+            <Container style={borders}>
+                <Row>
+                    <Col style={text}>Image</Col>
+                    <Col style={text}>Name</Col>
+                    <Col style={text}>Phone</Col>
+                    <Col style={text}>Email</Col>
+                    <Col style={text}>DOB</Col>
+                </Row>
             </Container>
         </React.Fragment>
     );
