@@ -6,8 +6,8 @@ export default {
   getEmployeeList: function() {
     return axios.get("https://randomuser.me/api/?results=200&nat=us");
   },
-  getEmployeeByName: function(name) {
-    return axios.get("https://randomuser.me/api/?results=200&nat=us" + name);
+  getEmployeeByGender: function(gender) {
+    return axios.get("https://randomuser.me/api/?results=200&gender=" + gender);
   },
   getBaseBreedsList: function() {
     return axios.get("https://dog.ceo/api/breeds/list");
