@@ -1,15 +1,18 @@
-import React from 'react';
-import Header from './components/header'
-import DataHeader from './components/dataheader'
-import Employeetemplate from './components/employeetemplate'
+import React from "react";
+import Main from "./components/Main";
+import Wrapper from "./components/Wrapper";
+import Header from "./components/Header";
+
+import "./App.css";
 
 function App() {
   return (
-    <React.Fragment>
-      <Header />
-      <DataHeader />
-      <Employeetemplate />
-    </React.Fragment>
+    <div className="App">
+      <Wrapper>
+        <Header />
+        <Main />
+      </Wrapper>
+    </div>
   );
 }
 
